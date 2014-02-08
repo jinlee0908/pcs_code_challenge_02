@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pry'
 
 # First, define methods used to create the test files.
 # We create the test files here
