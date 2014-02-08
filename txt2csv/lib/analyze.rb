@@ -4,7 +4,7 @@ require 'pry'
 case ARGV[0]
 
   when '-p'
-    pattern = /^\w+/ 
+    pattern = /^\w+\S/ 
     # set up some regular expression for prefixes
   when '-s'
     pattern = /\w+$/
@@ -27,7 +27,7 @@ end
 
 sorted = counts.sort_by {|word,count| count}.reverse
 
-puts sorted.map {|word, count| "#{word} : #{count}"}
+puts sorted.map {|word, count| "#{word} #{count}"}
 
 
 #   use the regular expression to find the right word#   count the word using a hash
