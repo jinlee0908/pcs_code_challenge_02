@@ -1,3 +1,5 @@
+#cleaned up indentations
+
 require 'pry'
 
 case ARGV[0]
